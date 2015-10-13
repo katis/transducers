@@ -1,0 +1,23 @@
+group 'org.katis'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.project_name = 'html-dsl'
+    ext.kotlin_version = '0.14.449'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: "kotlin"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
