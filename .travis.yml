@@ -1,3 +1,11 @@
 language: java
 jdk:
   - oraclejdk8
+deploy:
+  provider: releases
+  api_key:
+    secure: "nm/a8eXEEIzxNDZkij1NW0JdBf263ugIFTsPMqk8e2EyGJeA3x96BPgIXWWMZeJE0By0oSwtRoUdVgT4pAZDr0uHrsMDJrigVBlWG87hhLePbplzxdgpCN5TAl08zK4T5b4XYqA+aSEdk1+cfS9V6hDTaQ3Igs7rOuABE0xyKWuDnJDQkJXOhW5O+QM4xGS0Ac2m5G9zSCQi5NfD+ZDK/HP1h8tftDqqTZX45oHJmHx9j6mkR0/6FbYAayDnvVV0tadKuoM2j/QFWfBSpC8NCy/Up6mNtj6qAZ9Hey9KNQQ6bNO4swqE2a+7udC7Ek/paCOfgRT4bS8+z1dY0LVTjjG0Opi+sjTJDPSk+QCYgf8LDQ3Hk29dWaQascLr4fIAo8IJoJw4xcudrc54UwOIk1lnd6MmOFApPoSFmh8F+aiKW/gpa7rGqd2jCJ+7p3v39lNGdhVnM2MYXYVCO1u706XbNzk+PhljNNOq8bLqpwLi4si4UMNmrl9kvri4FTQYdIuQ82cm6bCdGEAkHUt47NH8yUkDlzioSA6OUXAzFbLk5jmtWUICoihslDVnX7/CUMpwhwuZCAMLzMy2d64sJI4A8GpeQxMkJ4oz37cQ3Q/J0X1QdDMuDUCbyw0yFcm+2txint1+9vM3a8zAQ5x4k0lVllQFj2OzDGzJf6yln6c="
+  file: "build/libs/transducers-1.0-SNAPSHOT.jar"
+  skip_cleanup: true
+  on:
+    tags: true
